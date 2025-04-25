@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYD My Voice</title>
+    <link rel="stylesheet" href="she.css">
+</head>
+<body>
+    
+    <fieldset>
+    <div class="logo">
+      <img src="images/logo.jpg" width="100px" height="100px">
+    </div>
+    <h1>NYD MY VOICE 2025 VOINJAMAH.</h1>
+    <div id="class">
+  <label for="content">
+    Contestant Name:
+  </label>
+  <input type="text" placeholder="name">
+</div>
+<br>
+
+<div id="class">
+    <label for="content">
+      Church Branch:
+    </label>
+    <input type="text" placeholder="church">
+  </div>
+  <br>
+
+  <div id="class">
+  <label for="content">
+    Contestant Zone:
+  </label>
+  <input type="number" placeholder="number">
+</div>
+<br>
+
+<div id="class">
+    <label for="content">
+      Email:
+    </label>
+    <input type="text" placeholder="email">
+  </div>
+    <br>
+
+ <div id="class">
+    <label for="content">
+      Phone Number:
+    </label>
+    <input type="text" placeholder="contact">
+  </div>
+  <br>
+<a href="thomasjabbah01@gmail.com"><button type="submit">submit</button></a>
+</fieldset>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registrationForm');
+            const Contestantnameerror= document.getElementById('contestantnameerror');
+            const churchbrancherror = document.getElementById('churchbrancherror');
+            const contestantzonerror = document.getElementById('contestantzoneerror');
+            const emailError = document.getElementById('emailError');
+            const phonenumberError = document.getElementById('phonenumberError');
+            const submitError = document.getElementById('submitError');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                validateForm();
+            });
+
+            function validateForm() {
+                let isValid = true;
+
+                // Validate contestant name
+                if (contestantnameInput.value.trim() === '') {
+                    displayError(contestantnameError, 'contestantname is required.');
+                    isValid = false;
+                } else if (contestantnameInput.value.trim().length < 3) {
+                    displayError(contestantnameError, 'contestantname must be at least 3 characters long.');
+                    isValid = false;
+                } else {
+                    clearError(contestantnameError);
+                }
+
+                // Validate Email
+                if (emailInput.value.trim() === '') {
+                    displayError(emailError, 'Email is required.');
+                    isValid = false;
+                } else if (!isValidEmail(emailInput.value.trim())) {
+                    displayError(emailError, 'Invalid email format.');
+                    isValid = false;
+                } else {
+                    clearError(emailError);
+                }
+
+</script>
+</body>
+</html>

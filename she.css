@@ -1,0 +1,53 @@
+body{
+    flex-wrap:wrap;
+    flex-grow: inherit;
+    -ms-flex: 0%;
+    display: flex;
+}
+
+h1{
+    font: optional;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200px;
+    color: gold;
+    font-size: 20px;
+    display: flex;
+}
+
+fieldset{
+    width: fit-content;
+    justify-items: center;
+    flex-wrap:wrap ;
+    border-radius: 20px;
+    margin-top: 200pxpx;
+    border-color: gold;
+    background-image: url(images/mic1.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+    border-radius: 17px;
+}
+
+#class, input{
+ font-stretch: expanded;
+ font-display: bold;
+ color: rgb(0, 0, 0);
+ width: 400px;
+ border-radius: 10px;
+ border-color: blue;
+}
+
+button{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    border-color: rgb(226, 216, 216);
+    border-width: 3px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
